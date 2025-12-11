@@ -93,4 +93,12 @@ class OldApiService
             return null;
         }
     }
+
+    public function cekData(OldApiService $service)
+    {
+        $data = $service->getAllKomsels();
+        
+        // Ini akan menampilkan struktur array di layar browser
+        dd($data); 
+    }
 }
